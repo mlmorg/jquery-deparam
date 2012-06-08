@@ -42,7 +42,7 @@ $.deparam = function (string, coerce) {
           current = current[k];
         }
       } else {
-        current = $.isArray(current) ? current : v;
+        current = $.isArray(current) ? current.push(v) : v;
       }
     });
   };
